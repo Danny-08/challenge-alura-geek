@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (confirmar) {
       console.log("hecho")
       try {
-        const response = await fetch(`${urlAPI}/?id=${id}`, {
+        const response = await fetch(`${urlAPI}/${id}`, {
           method: 'DELETE',
           headers: { 
             'Content-Type': 'application/json',
