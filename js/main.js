@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
           method: 'DELETE',
           headers: { 
             'Content-Type': 'application/json',
-            "Permissions-Policy": "geolocation=(self `http://localhost:3000/product`)"
+            "Permissions-Policy": "geolocation=(self `https://alurageek-api-neon.vercel.app/productos`)"
           }
         });
          if (!response.ok) {
