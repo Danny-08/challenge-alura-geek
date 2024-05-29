@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const productosDiv = document.querySelector('[data-product]');
-  const urlAPI = "http://localhost:3000/productos"
+  const urlAPI = "https://alurageek-api-neon.vercel.app/productos"
   let productos = [];
 
   // Función para obtener los productos del servidor
