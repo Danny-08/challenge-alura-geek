@@ -1,0 +1,195 @@
+/* Estilos Generales */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+}
+
+/* Estilos para la cabecera */
+.header, .logo-title-page { /* logo-title-page en el footer*/
+    background-color: rgb(93,4,217);
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+/* Estilos para el cuerpo principal */
+.main {
+    height: 75vh;
+    display: flex;
+    gap: 5%;
+    padding: 2% 5%;
+}
+
+/* Estilos para la sección de productos */
+.section-product {
+    width: 50%;
+}
+
+.title-product,
+.title-form {
+    margin-bottom: 2%;
+    text-align: center;
+    color: black;
+}
+
+.container-product {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.card {
+    width: 30%;
+    height: max-content;
+    background-color: rgb(93,4,217);
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+}
+
+.img-product {
+    width: 100%;
+}
+
+.name-product {
+    margin: 2% 0;
+}
+
+.info-product {
+    display: flex;
+    justify-content: space-between;
+    margin: 3% 0;
+}
+
+button.delete-button {
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Estilos para la sección de Agregar Producto */
+.section-form {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.title-form {
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+.container-form {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 0;
+}
+
+
+.container-form input {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border: solid 2px rgb(3,49,140);
+    border-radius: 20px;
+    color: #000;
+}
+
+.container-form input::placeholder {
+    color: rgba(3,49,140, 0.5);
+    font-weight: lighter;
+}
+
+/* estilos generales para botones del form*/
+.button-form button {
+    width: 48%;
+    border-radius: 10px;
+    border: solid 1px rgb(3,49,140);
+    padding: 5px 0;
+    
+}
+
+/* estilos especificos para cada boton*/
+.button-form button[type="submit"] {
+    background-color: rgb(3,49,140);
+}
+.button-form button[type="reset"] {
+    color: rgb(3,49,140);
+}
+/* Estilos para el pie de pagina */
+.footer {
+    height: 15vh;
+    background-color: rgb(93,4,217);
+    text-align: center;
+}
+
+.logo-info {
+    margin: 15px 0;
+}
+
+.logo-title-page {
+    padding-bottom: 0;
+}
+
+.footer p {
+    margin-bottom: 0.5%;
+}
+
+footer p:nth-child(3) {
+    font-weight: 30;
+   color: #cbc8c8; 
+}
+
+/* versión movil */
+
+@media screen and (max-width:768px) {
+    .main {
+        flex-wrap: wrap;
+    }
+    .section-form {
+        order: -1;
+        width: 100%;
+    }
+    .container-form {
+        gap: 7px;
+    }
+    .section-product {
+        flex: 2;
+        width: 100%;
+    }
+    .container-product {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+    }
+    .card {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
